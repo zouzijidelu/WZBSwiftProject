@@ -1,0 +1,6 @@
+${PODS_ROOT}/Target Support Files/Pods-WZBSwiftProject/Pods-WZBSwiftProject-frameworks.sh
+${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework
+${BUILT_PRODUCTS_DIR}/CryptoSwift/CryptoSwift.framework
+${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework
+${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework
+${BUILT_PRODUCTS_DIR}/iMetisSDK/iMetisSDK.framework

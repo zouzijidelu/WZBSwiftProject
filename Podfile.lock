@@ -1,0 +1,34 @@
+PODS:
+  - Alamofire (4.9.1)
+  - CryptoSwift (1.3.0)
+  - iMetisSDK (0.3.8)
+  - Kingfisher (4.10.1)
+  - SwiftyJSON (5.0.0)
+
+DEPENDENCIES:
+  - Alamofire
+  - CryptoSwift
+  - iMetisSDK (= 0.3.8)
+  - Kingfisher
+  - SwiftyJSON
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - Alamofire
+    - CryptoSwift
+    - Kingfisher
+  https://gitlab.263nt.com/italkbbspecs/italkbbspecs:
+    - iMetisSDK
+  trunk:
+    - SwiftyJSON
+
+SPEC CHECKSUMS:
+  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  CryptoSwift: 1283821600233bdbeb96d7b389c3288c3bf77211
+  iMetisSDK: 64e10d289ca53afa994917ec0151a0592b6f7aac
+  Kingfisher: c148cd7b47ebde9989f6bc7c27dcaa79d81279a0
+  SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
+
+PODFILE CHECKSUM: e47630b8cfa682b2f9e5becb21c461946640acfa
+
+COCOAPODS: 1.8.4

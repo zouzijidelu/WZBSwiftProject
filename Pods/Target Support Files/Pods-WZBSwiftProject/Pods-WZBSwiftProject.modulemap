@@ -1,0 +1,6 @@
+framework module Pods_WZBSwiftProject {
+  umbrella header "Pods-WZBSwiftProject-umbrella.h"
+
+  export *
+  module * { export * }
+}

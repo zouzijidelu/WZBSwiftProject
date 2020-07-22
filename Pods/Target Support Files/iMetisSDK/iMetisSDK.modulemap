@@ -1,0 +1,6 @@
+framework module iMetisSDK {
+  umbrella header "iMetisSDK-umbrella.h"
+
+  export *
+  module * { export * }
+}
