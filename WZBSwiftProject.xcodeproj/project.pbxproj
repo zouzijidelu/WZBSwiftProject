@@ -27,6 +27,7 @@
 		8B2EC56524C83F9400230713 /* XIBVC3.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B2EC56424C83F9400230713 /* XIBVC3.xib */; };
 		8B2EC56724C8484700230713 /* XIBView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B2EC56624C8484700230713 /* XIBView.swift */; };
 		8B2EC56924C8485100230713 /* XIBView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B2EC56824C8485100230713 /* XIBView.xib */; };
+		8B2EC56B24C9A2D900230713 /* AView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B2EC56A24C9A2D900230713 /* AView.swift */; };
 		8BCFE60124722958004B68E1 /* AlamofireVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BCFE5FF24722958004B68E1 /* AlamofireVC.swift */; };
 		8BCFE60224722958004B68E1 /* AlamofireVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8BCFE60024722958004B68E1 /* AlamofireVC.xib */; };
 		8BCFE60424722ABC004B68E1 /* BZBaseNaviController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BCFE60324722ABC004B68E1 /* BZBaseNaviController.swift */; };
@@ -56,6 +57,7 @@
 		8B2EC56424C83F9400230713 /* XIBVC3.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = XIBVC3.xib; sourceTree = "<group>"; };
 		8B2EC56624C8484700230713 /* XIBView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XIBView.swift; sourceTree = "<group>"; };
 		8B2EC56824C8485100230713 /* XIBView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = XIBView.xib; sourceTree = "<group>"; };
+		8B2EC56A24C9A2D900230713 /* AView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AView.swift; sourceTree = "<group>"; };
 		8BCFE5FF24722958004B68E1 /* AlamofireVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireVC.swift; sourceTree = "<group>"; };
 		8BCFE60024722958004B68E1 /* AlamofireVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlamofireVC.xib; sourceTree = "<group>"; };
 		8BCFE60324722ABC004B68E1 /* BZBaseNaviController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BZBaseNaviController.swift; sourceTree = "<group>"; };
@@ -122,17 +124,9 @@
 			path = WZBSwiftProject;
 			sourceTree = "<group>";
 		};
-		8BCFE5FE24722927004B68E1 /* Classes */ = {
+		8B2EC56C24C9A3CE00230713 /* 生命周期 */ = {
 			isa = PBXGroup;
 			children = (
-				8B098FB42449AF3200454D27 /* BZBaseVC.swift */,
-				8BCFE60324722ABC004B68E1 /* BZBaseNaviController.swift */,
-				8B098FB62449B0B500454D27 /* SwiftyJsonVC.swift */,
-				8B098FB72449B0B500454D27 /* SwiftJsonVC.xib */,
-				8B098FBA2449B6D100454D27 /* GenericsVC.swift */,
-				8B098FBB2449B6D100454D27 /* GenericsVC.xib */,
-				8BCFE5FF24722958004B68E1 /* AlamofireVC.swift */,
-				8BCFE60024722958004B68E1 /* AlamofireVC.xib */,
 				8B2EC55224C6F58C00230713 /* CodeVC.swift */,
 				8B2EC55424C6F59D00230713 /* XIBVC.swift */,
 				8B2EC55524C6F59D00230713 /* XIBVC.xib */,
@@ -142,6 +136,23 @@
 				8B2EC56424C83F9400230713 /* XIBVC3.xib */,
 				8B2EC56624C8484700230713 /* XIBView.swift */,
 				8B2EC56824C8485100230713 /* XIBView.xib */,
+				8B2EC56A24C9A2D900230713 /* AView.swift */,
+			);
+			path = "生命周期";
+			sourceTree = "<group>";
+		};
+		8BCFE5FE24722927004B68E1 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				8B2EC56C24C9A3CE00230713 /* 生命周期 */,
+				8B098FB42449AF3200454D27 /* BZBaseVC.swift */,
+				8BCFE60324722ABC004B68E1 /* BZBaseNaviController.swift */,
+				8B098FB62449B0B500454D27 /* SwiftyJsonVC.swift */,
+				8B098FB72449B0B500454D27 /* SwiftJsonVC.xib */,
+				8B098FBA2449B6D100454D27 /* GenericsVC.swift */,
+				8B098FBB2449B6D100454D27 /* GenericsVC.xib */,
+				8BCFE5FF24722958004B68E1 /* AlamofireVC.swift */,
+				8BCFE60024722958004B68E1 /* AlamofireVC.xib */,
 				8B2EC55824C6F5B400230713 /* StoryboardVC.storyboard */,
 			);
 			path = Classes;
@@ -276,6 +287,7 @@
 				8B2EC55624C6F59D00230713 /* XIBVC.swift in Sources */,
 				8BCFE60424722ABC004B68E1 /* BZBaseNaviController.swift in Sources */,
 				8B2EC55324C6F58C00230713 /* CodeVC.swift in Sources */,
+				8B2EC56B24C9A2D900230713 /* AView.swift in Sources */,
 				8B2EC56724C8484700230713 /* XIBView.swift in Sources */,
 				8BCFE60124722958004B68E1 /* AlamofireVC.swift in Sources */,
 				8B2EC56024C83D9900230713 /* XIBVC2.swift in Sources */,

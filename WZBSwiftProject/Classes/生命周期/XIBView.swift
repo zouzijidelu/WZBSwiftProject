@@ -22,5 +22,8 @@ class XIBView: UIView {
         super.awakeFromNib()
         
     }
-
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        print("XIBView layoutSubviews")
+    }
 }

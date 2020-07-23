@@ -25,9 +25,29 @@ class CodeVC: UIViewController {
             xibView.frame = CGRect(x: 0, y: 0, width: UIScreen.main.bounds.size.width, height: 100)
             view.addSubview(xibView)
         }
+        let aV = AView()
+        view.addSubview(aV)
+        
+        print("viewDidLoad")
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        print("viewWillAppear")
+    }
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        print("viewDidAppear")
+    }
+    override func viewWillLayoutSubviews() {
+        super.viewWillLayoutSubviews()
+        print("viewWillLayoutSubviews")
+    }
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        print("viewDidLayoutSubviews")
     }
     override func willMove(toParent parent: UIViewController?) {
         super.willMove(toParent: parent)
-        
+        print("willMove toParent")
     }
 }
