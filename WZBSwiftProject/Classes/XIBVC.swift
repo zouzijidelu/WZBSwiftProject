@@ -10,12 +10,15 @@ import UIKit
 
 class XIBVC: UIViewController {
     @IBOutlet weak var gView: UIView!
+    
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
     }
+    
     required init?(coder: NSCoder) {
         super.init(coder: coder)
     }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "XIBVC"
@@ -29,6 +32,4 @@ class XIBVC: UIViewController {
         gradient.frame = gView.layer.bounds
         gView.layer.insertSublayer(gradient, at: 0)
     }
-
-
 }

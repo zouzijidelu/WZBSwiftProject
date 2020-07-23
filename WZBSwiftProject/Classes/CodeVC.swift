@@ -16,9 +16,18 @@ class CodeVC: UIViewController {
     required init?(coder: NSCoder) {
         super.init(coder: coder)
     }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         view.backgroundColor = .white
+        if let xibView = Bundle.main.loadNibNamed("XIBView", owner: nil, options: nil)?.first as? XIBView {
+            xibView.frame = CGRect(x: 0, y: 0, width: UIScreen.main.bounds.size.width, height: 100)
+            view.addSubview(xibView)
+        }
+    }
+    override func willMove(toParent parent: UIViewController?) {
+        super.willMove(toParent: parent)
+        
     }
 }
