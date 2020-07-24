@@ -7,13 +7,25 @@
 //
 
 import UIKit
-
-extension UIView {
-    func sgm_safeAreaInset() -> CGFloat {
-        if #available(iOS 11.0, *) {
-            return self.safeAreaInsets.top
+//1.导航栏高度 88 非IPoneX 64
+//2.状态栏高度44 非IPoneX 20
+//3.tabar高度83 非IPhoneX 49
+class LayoutUtil {
+    static func isIphoneXOrLater() -> Bool {
+        
+        guard #available(iOS 11.0, *) else {
+            return false
         }
-        return 0
+        let isX = UIApplication.shared.windows[0].safeAreaInsets.bottom > 0
+        print("isX \(isX)")
+        return isX
+    }
+    
+    static func getTopBarHeight() -> CGFloat {
+        return isIphoneXOrLater() ? 88 : 64
+    }
+    
+    static func getBottonHeight() -> CGFloat {
+        return isIphoneXOrLater() ? 83 : 49
     }
 }
-

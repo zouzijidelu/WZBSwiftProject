@@ -8,7 +8,7 @@
 
 import UIKit
 
-class XIBVC3: UIViewController {
+class XIBVC3: BZBaseVC {
 
     @IBOutlet weak var testL: UILabel!
     override func viewDidLoad() {

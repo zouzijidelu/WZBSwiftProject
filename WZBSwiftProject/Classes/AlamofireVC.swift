@@ -9,7 +9,7 @@
 import UIKit
 import Alamofire
 
-class AlamofireVC: UIViewController {
+class AlamofireVC: BZBaseVC {
 
     var dataTask: URLSessionDataTask?
     var urlSession: URLSession = URLSession.shared

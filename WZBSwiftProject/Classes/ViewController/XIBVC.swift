@@ -8,7 +8,7 @@
 
 import UIKit
 
-class XIBVC: UIViewController {
+class XIBVC: BZBaseVC {
     @IBOutlet weak var gView: UIView!
     
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {

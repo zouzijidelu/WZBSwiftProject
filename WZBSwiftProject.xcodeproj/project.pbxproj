@@ -12,7 +12,7 @@
 		8B098F882449A6A700454D27 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B098F862449A6A700454D27 /* Main.storyboard */; };
 		8B098F8A2449A6AA00454D27 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B098F892449A6AA00454D27 /* Assets.xcassets */; };
 		8B098F8D2449A6AA00454D27 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B098F8B2449A6AA00454D27 /* LaunchScreen.storyboard */; };
-		8B098FB52449AF3200454D27 /* BZBaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B098FB42449AF3200454D27 /* BZBaseVC.swift */; };
+		8B098FB52449AF3200454D27 /* BZFirstVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B098FB42449AF3200454D27 /* BZFirstVC.swift */; };
 		8B098FB82449B0B500454D27 /* SwiftyJsonVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B098FB62449B0B500454D27 /* SwiftyJsonVC.swift */; };
 		8B098FB92449B0B500454D27 /* SwiftJsonVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B098FB72449B0B500454D27 /* SwiftJsonVC.xib */; };
 		8B098FBC2449B6D100454D27 /* GenericsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B098FBA2449B6D100454D27 /* GenericsVC.swift */; };
@@ -29,6 +29,7 @@
 		8B2EC56924C8485100230713 /* XIBView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B2EC56824C8485100230713 /* XIBView.xib */; };
 		8B2EC56B24C9A2D900230713 /* AView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B2EC56A24C9A2D900230713 /* AView.swift */; };
 		8B2EC57024CA7A0600230713 /* LayoutUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B2EC56F24CA7A0600230713 /* LayoutUtil.swift */; };
+		8B2EC57224CAD23F00230713 /* BZBaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B2EC57124CAD23F00230713 /* BZBaseVC.swift */; };
 		8BCFE60124722958004B68E1 /* AlamofireVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BCFE5FF24722958004B68E1 /* AlamofireVC.swift */; };
 		8BCFE60224722958004B68E1 /* AlamofireVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8BCFE60024722958004B68E1 /* AlamofireVC.xib */; };
 		8BCFE60424722ABC004B68E1 /* BZBaseNaviController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BCFE60324722ABC004B68E1 /* BZBaseNaviController.swift */; };
@@ -43,7 +44,7 @@
 		8B098F892449A6AA00454D27 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8B098F8C2449A6AA00454D27 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8B098F8E2449A6AA00454D27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8B098FB42449AF3200454D27 /* BZBaseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BZBaseVC.swift; sourceTree = "<group>"; };
+		8B098FB42449AF3200454D27 /* BZFirstVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BZFirstVC.swift; sourceTree = "<group>"; };
 		8B098FB62449B0B500454D27 /* SwiftyJsonVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyJsonVC.swift; sourceTree = "<group>"; };
 		8B098FB72449B0B500454D27 /* SwiftJsonVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SwiftJsonVC.xib; sourceTree = "<group>"; };
 		8B098FBA2449B6D100454D27 /* GenericsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericsVC.swift; sourceTree = "<group>"; };
@@ -60,6 +61,7 @@
 		8B2EC56824C8485100230713 /* XIBView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = XIBView.xib; sourceTree = "<group>"; };
 		8B2EC56A24C9A2D900230713 /* AView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AView.swift; sourceTree = "<group>"; };
 		8B2EC56F24CA7A0600230713 /* LayoutUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutUtil.swift; sourceTree = "<group>"; };
+		8B2EC57124CAD23F00230713 /* BZBaseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BZBaseVC.swift; sourceTree = "<group>"; };
 		8BCFE5FF24722958004B68E1 /* AlamofireVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireVC.swift; sourceTree = "<group>"; };
 		8BCFE60024722958004B68E1 /* AlamofireVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlamofireVC.xib; sourceTree = "<group>"; };
 		8BCFE60324722ABC004B68E1 /* BZBaseNaviController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BZBaseNaviController.swift; sourceTree = "<group>"; };
@@ -146,8 +148,9 @@
 		8B2EC56D24CA739A00230713 /* Base */ = {
 			isa = PBXGroup;
 			children = (
-				8B098FB42449AF3200454D27 /* BZBaseVC.swift */,
+				8B098FB42449AF3200454D27 /* BZFirstVC.swift */,
 				8BCFE60324722ABC004B68E1 /* BZBaseNaviController.swift */,
+				8B2EC57124CAD23F00230713 /* BZBaseVC.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -301,6 +304,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8B2EC56324C83F8400230713 /* XIBVC3.swift in Sources */,
+				8B2EC57224CAD23F00230713 /* BZBaseVC.swift in Sources */,
 				8B2EC57024CA7A0600230713 /* LayoutUtil.swift in Sources */,
 				8B098FBC2449B6D100454D27 /* GenericsVC.swift in Sources */,
 				8B098F812449A6A700454D27 /* AppDelegate.swift in Sources */,
@@ -311,7 +315,7 @@
 				8B2EC56724C8484700230713 /* XIBView.swift in Sources */,
 				8BCFE60124722958004B68E1 /* AlamofireVC.swift in Sources */,
 				8B2EC56024C83D9900230713 /* XIBVC2.swift in Sources */,
-				8B098FB52449AF3200454D27 /* BZBaseVC.swift in Sources */,
+				8B098FB52449AF3200454D27 /* BZFirstVC.swift in Sources */,
 				8B098FB82449B0B500454D27 /* SwiftyJsonVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -460,7 +464,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 29HA8N9RQ5;
 				INFOPLIST_FILE = WZBSwiftProject/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -480,7 +484,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 29HA8N9RQ5;
 				INFOPLIST_FILE = WZBSwiftProject/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

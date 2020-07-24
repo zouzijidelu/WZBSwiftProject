@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SwiftyJsonVC: UIViewController {
+class SwiftyJsonVC: BZBaseVC {
 
     override func viewDidLoad() {
         super.viewDidLoad()

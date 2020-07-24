@@ -45,7 +45,7 @@ class Control {
     }
 }
 
-class GenericsVC: UIViewController {
+class GenericsVC: BZBaseVC {
     let test = 10
     override func viewDidLoad() {
         super.viewDidLoad()
