@@ -1,5 +1,5 @@
 //
-//  SwiftBaseVC.swift
+//  BZFirstVC.swift
 //  WZBSwiftProject
 //
 //  Created by zhibin wang on 2020/4/17.
@@ -10,7 +10,7 @@ import UIKit
 
 let cellId = "CELLID"
 
-class BZBaseVC: UITableViewController {
+class BZFirstVC: UITableViewController {
 
     
     @IBOutlet var swiftTableView: UITableView!
@@ -31,7 +31,7 @@ class BZBaseVC: UITableViewController {
 }
 
 // MARK: tableview DataSource
-extension BZBaseVC {
+extension BZFirstVC {
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return categorys.count
     }
@@ -43,7 +43,7 @@ extension BZBaseVC {
     }
 }
 // MARK: tableview delegate
-extension BZBaseVC {
+extension BZFirstVC {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         guard let spaceName = Bundle.main.infoDictionary?["CFBundleExecutable"] as? String else {
             return
