@@ -17,9 +17,9 @@ class BZBaseVC: UITableViewController {
     let categorys: [String] = ["SwiftyJsonVC","GenericsVC","AlamofireVC","CodeVC","XIBVC","XIBVC2","XIBVC3"]
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationController?.navigationBar.isHidden = true
+        
         // self.view 会影响是否占满全屏
-//        navigationController?.navigationBar.isTranslucent = false
+        //navigationController?.navigationBar.isTranslucent = false
 //        tabBarController?.tabBar.isTranslucent = false
 //        edgesForExtendedLayout = .all
         

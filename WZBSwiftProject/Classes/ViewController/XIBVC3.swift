@@ -13,7 +13,7 @@ class XIBVC3: UIViewController {
     @IBOutlet weak var testL: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.navigationController?.navigationBar.isHidden = true
         view.backgroundColor = .red
         debugPrint(testL.frame)
     }
