@@ -1,6 +1,7 @@
-source 'https://gitlab.263nt.com/italkbbspecs/italkbbspecs'
-#source 'http://gitlab.italktv.com/c-common/Podspecs.git'
 source 'https://github.com/CocoaPods/Specs.git'
+source 'https://github.com/zouzijidelu/WZBSpec.git'
+source 'https://gitlab.263nt.com/italkbbspecs/italkbbspecs'
+source 'http://gitlab.italktv.com/c-common/Podspecs.git'
 
 inhibit_all_warnings!
 platform :ios, '9.0'
@@ -11,29 +12,15 @@ def shared_pods
     pod 'Alamofire'
     pod 'CryptoSwift'
     pod 'SwiftyJSON'
-#    pod 'MJRefresh', '3.2.0'
-#    pod 'IQKeyboardManagerSwift', '5.0.0'
-#    pod 'Cache'
-#    pod 'GoogleAds-IMA-iOS-SDK'
-#    pod 'iTAVideoAds'
-#    pod 'google-cast-sdk-no-bluetooth'
-#    pod 'Firebase/Core', '6.11.0'
-#    pod 'Firebase/Messaging'
-#    pod 'Fabric'
-#    pod 'Crashlytics'
-#    pod 'KeychainSwift'
-#    pod 'GoogleTagManager'
-    pod 'iMetisSDK', '0.4.9'
-#    pod 'GoogleIDFASupport'
-#    pod 'SnapKit'
-#    pod 'FBSDKCoreKit/Swift'
-#    pod 'FBSDKLoginKit/Swift'
-#    pod 'FBSDKShareKit/Swift'
-#    pod 'GoogleSignIn'
-
+    pod 'Aspects'
+    pod 'OCModule'
+    #pod 'iTPlayerManager', :git => 'http://gitlab.italktv.com/c-common/itplayermanager'
 end
 
 target 'WZBSwiftProject' do
+  shared_pods
+end
+target 'WZBSwiftProjectBeta' do
   shared_pods
 end
 

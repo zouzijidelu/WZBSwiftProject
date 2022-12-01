@@ -1,0 +1,26 @@
+{
+    "code":0,
+    "message":"",
+    "result":{
+        "numFound":3000,
+        "beforeAt":123,
+        "unReadCount":66,
+        "msgList":[
+            {
+                "message":{
+                    "title":"标题",
+                    "body":"描述",
+                    "imageURL":"图片地址",
+                    "isRead":0,
+                    "timestamp":13912391238
+                },
+                "data":{
+                    "root_zplaylist_id":"rootId",
+                    "category_zplaylist_id":"categoryId",
+                    "series_zplaylist_id":"playlistId",
+                    "zvideo_id":"videoId"
+                }
+            }
+        ]
+    }
+}

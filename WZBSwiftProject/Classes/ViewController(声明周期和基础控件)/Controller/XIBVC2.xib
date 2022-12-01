@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <viewController id="EQW-HX-CQx" customClass="XIBVC2" customModule="WZBSwiftProject" customModuleProvider="target">
+            <view key="view" contentMode="scaleToFill" id="zlc-v3-dar">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                <subviews>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="aLX-v3-hnF">
+                        <rect key="frame" x="0.0" y="44" width="414" height="124"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="124" id="nUs-jL-Va6"/>
+                        </constraints>
+                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="a84-d2-sHR">
+                            <size key="itemSize" width="128" height="128"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                    </collectionView>
+                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ScY-H3-6ey">
+                        <rect key="frame" x="155" y="433" width="32" height="30"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <state key="normal" title="click"/>
+                        <connections>
+                            <action selector="click:" destination="EQW-HX-CQx" eventType="touchUpInside" id="nQx-fP-lea"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                <constraints>
+                    <constraint firstItem="o3D-j6-FXt" firstAttribute="trailing" secondItem="aLX-v3-hnF" secondAttribute="trailing" id="bco-zn-3Se"/>
+                    <constraint firstItem="aLX-v3-hnF" firstAttribute="top" secondItem="o3D-j6-FXt" secondAttribute="top" id="sJk-rs-J2S"/>
+                    <constraint firstItem="aLX-v3-hnF" firstAttribute="leading" secondItem="o3D-j6-FXt" secondAttribute="leading" id="yeG-oE-MEi"/>
+                </constraints>
+                <viewLayoutGuide key="safeArea" id="o3D-j6-FXt"/>
+            </view>
+            <connections>
+                <outlet property="collectionView" destination="aLX-v3-hnF" id="VDc-WZ-jOV"/>
+            </connections>
+            <point key="canvasLocation" x="139" y="120"/>
+        </viewController>
+    </objects>
+</document>

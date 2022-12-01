@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--CollectionVC-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="BZCollectionVC" id="Y6W-OH-hqX" customClass="BZCollectionVC" customModule="WZBSwiftProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="IkP-Am-xrR">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewLayout key="collectionViewLayout" id="hIA-vz-lZW" customClass="BZMyFlowLayout" customModule="WZBSwiftProject" customModuleProvider="target"/>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MyCollectionCell" id="1L6-nc-UHj">
+                                        <rect key="frame" x="104.5" y="0.0" width="205" height="217"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="64B-EC-vLe">
+                                            <rect key="frame" x="0.0" y="0.0" width="205" height="217"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="v9c-gQ-b76">
+                                                    <rect key="frame" x="0.0" y="0.0" width="205" height="105"/>
+                                                    <color key="backgroundColor" red="1" green="0.63529411759999999" blue="0.51372549020000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="105" id="c8Z-gX-wLN"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="有點意思" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DYO-64-oTm" customClass="MyCollectionCell">
+                                                    <rect key="frame" x="0.0" y="105" width="205" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="jCO-qY-aok"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="DYO-64-oTm" firstAttribute="top" secondItem="v9c-gQ-b76" secondAttribute="bottom" id="3u1-1k-rsT"/>
+                                                <constraint firstItem="v9c-gQ-b76" firstAttribute="top" secondItem="64B-EC-vLe" secondAttribute="top" id="8Td-F9-dLy"/>
+                                                <constraint firstItem="v9c-gQ-b76" firstAttribute="leading" secondItem="64B-EC-vLe" secondAttribute="leading" id="gtG-LL-11b"/>
+                                                <constraint firstAttribute="trailing" secondItem="DYO-64-oTm" secondAttribute="trailing" id="lLI-XE-2bp"/>
+                                                <constraint firstItem="DYO-64-oTm" firstAttribute="leading" secondItem="64B-EC-vLe" secondAttribute="leading" id="pHX-os-UQv"/>
+                                                <constraint firstAttribute="trailing" secondItem="v9c-gQ-b76" secondAttribute="trailing" id="vLv-qb-U69"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                        <size key="customSize" width="205" height="217"/>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="Y6W-OH-hqX" id="khf-BO-jJt"/>
+                                    <outlet property="delegate" destination="Y6W-OH-hqX" id="b3B-OC-0jG"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="IkP-Am-xrR" secondAttribute="trailing" id="1s1-AR-Oij"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="IkP-Am-xrR" secondAttribute="bottom" id="BAg-tN-ssF"/>
+                            <constraint firstItem="IkP-Am-xrR" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="Py9-67-Dp9"/>
+                            <constraint firstItem="IkP-Am-xrR" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="eh1-lU-Hhn"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="collectionView" destination="IkP-Am-xrR" id="3Yb-wN-41I"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="113.04347826086958" y="75.669642857142847"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -13,18 +13,21 @@ let cellId = "CELLID"
 class BZFirstVC: UITableViewController {
 
     
-    @IBOutlet var swiftTableView: UITableView!
-    let categorys: [String] = ["SwiftyJsonVC","GenericsVC","AlamofireVC","CodeVC","XIBVC","XIBVC2","XIBVC3"]
+    @IBOutlet var swiftTableView: BZBaseTableView!
+    let categorys: [String] = ["BZCodebalVC","SwiftyJsonVC","GenericsVC","AlamofireVC","CodeVC","XIBVC","XIBVC2","XIBVC3","BZMessageSendVC","BZCustomNavVC","DFArrowMenuVC","BZSearchVC","BZUIVCAnimatedTransitioning","BZKingfisherVC","BZCollectionVC","BZTimeDateVC"]
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         // self.view 会影响是否占满全屏
         //navigationController?.navigationBar.isTranslucent = false
 //        tabBarController?.tabBar.isTranslucent = false
 //        edgesForExtendedLayout = .all
         
         // Do any additional setup after loading the view.
-        self.view.backgroundColor = UIColor.orange
+        #if BETAVERSION
+        self.view.backgroundColor = UIColor.green
+        #else
+        self.view.backgroundColor = UIColor.black
+        #endif
         self.swiftTableView.register(UITableViewCell.self, forCellReuseIdentifier: cellId)
         self.title = "SwiftBaseVC"
     }
@@ -32,13 +35,26 @@ class BZFirstVC: UITableViewController {
 
 // MARK: tableview DataSource
 extension BZFirstVC {
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    override func numberOfSections(in tableView: UITableView) -> Int {
         return categorys.count
     }
-    
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 1
+    }
+    override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 40
+    }
+    override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let sV = UIView()
+        sV.backgroundColor = .blue
+        return sV
+    }
+    override func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+        return 0.01
+    }
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: cellId, for: indexPath)
-        cell.textLabel?.text = categorys[indexPath.row]
+        cell.textLabel?.text = categorys[indexPath.section]
         return cell
     }
 }
@@ -49,7 +65,7 @@ extension BZFirstVC {
             return
         }
         
-        let name = categorys[indexPath.row]
+        let name = categorys[indexPath.section]
 //        if name == "XIBVC" {
 ////            if let xibVC = Bundle.main.loadNibNamed("XIBVC", owner: nil, options: nil)?.first as? XIBVC {
 ////                navigationController?.pushViewController(xibVC, animated: true)
@@ -72,6 +88,11 @@ extension BZFirstVC {
 //            }
             let xibVC3 = XIBVC3(nibName: "XIBVC3", bundle: nil)
             navigationController?.pushViewController(xibVC3, animated: true)
+            return
+        }
+        if name == "BZCollectionVC" {
+            let storyboardVC = UIStoryboard.init(name: "CollectionVC", bundle: nil).instantiateViewController(withIdentifier: "BZCollectionVC")
+            navigationController?.pushViewController(storyboardVC, animated: true)
             return
         }
         let vcClass: AnyClass? = NSClassFromString(spaceName + "." + name)
